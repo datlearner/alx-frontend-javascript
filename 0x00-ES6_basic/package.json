@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node -r esm 2-main.js",
-    "lint": "eslint 2-main.js"
+    "dev": "node -r esm 3-main.js",
+    "lint": "eslint 3-main.js"
   },
   "dependencies": {},
   "devDependencies": {
