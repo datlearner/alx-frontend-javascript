@@ -2,9 +2,11 @@
   "name": "my_project",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "node 0-main.js"
   },
   "author": "",
   "license": "ISC",
