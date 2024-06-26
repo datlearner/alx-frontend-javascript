@@ -1,6 +1,6 @@
 export default function getFullResponseFromAPI(success) {
     return new Promise ((resolve, reject) => {
-        if (true) {
+        if (success) {
             resolve({staus: 200, body: 'Success'})
         }
         else{
