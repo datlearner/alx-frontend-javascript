@@ -2,6 +2,7 @@
   "name": "my-project",
   "version": "1.0.0",
   "description": "A project with Jest, Babel, and ESLint",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest",
