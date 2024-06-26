@@ -1,5 +1,3 @@
-import getResponseFromAPI from './0-promise';
-
+import getResponseFromAPI from "./0-promise";
 const response = getResponseFromAPI();
-response instanceof Promise;
-
+console.log(response instanceof Promise);
