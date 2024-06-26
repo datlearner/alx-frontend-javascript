@@ -1,6 +1,6 @@
 export default function getResponseFromAPI() {
-    return new Promise((resolve, reject) => {
-        resolve(true);
-        reject();
-    });
-};
+  return new Promise((resolve, reject) => {
+    resolve(true);
+    reject();
+  });
+}
