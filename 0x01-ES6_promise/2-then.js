@@ -5,7 +5,8 @@ export default function handleResponseFromAPI(promise) {
         }
 
         else{
-            reject({})
-        }
+            reject({});
+        };
+        
     })
 }
