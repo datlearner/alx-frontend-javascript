@@ -1,20 +1,20 @@
-import loadBalancer from "./7-load_balancer";
+import loadBalancer from './7-load_balancer';
 
-test("loadBalancer returns the value of the fastest promise", async () => {
+test('loadBalancer returns the value of the fastest promise', async () => {
   const chinaSuccess = 'Downloading from China is faster';
   const USASuccess = 'Downloading from USA is faster';
 
-  const promiseChina = new Promise(function(resolve, reject) {
+  const promiseChina = new Promise(((resolve, reject) => {
     setTimeout(resolve, 100, chinaSuccess);
-  });
+  }));
 
-  const promiseSlowChina = new Promise(function(resolve, reject) {
+  const promiseSlowChina = new Promise(((resolve, reject) => {
     setTimeout(resolve, 500, chinaSuccess);
-  });
+  }));
 
-  const promiseUSA = new Promise(function(resolve, reject) {
+  const promiseUSA = new Promise(((resolve, reject) => {
     setTimeout(resolve, 300, USASuccess);
-  });
+  }));
 
   const value = await loadBalancer(promiseChina, promiseUSA);
   expect(value).toEqual('Downloading from China is faster');
