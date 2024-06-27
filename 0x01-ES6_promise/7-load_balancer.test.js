@@ -6,14 +6,17 @@ test('loadBalancer returns the value of the fastest promise', async () => {
 
   const promiseChina = new Promise(((resolve, reject) => {
     setTimeout(resolve, 100, chinaSuccess);
+    reject();
   }));
 
   const promiseSlowChina = new Promise(((resolve, reject) => {
     setTimeout(resolve, 500, chinaSuccess);
+    reject();
   }));
 
   const promiseUSA = new Promise(((resolve, reject) => {
     setTimeout(resolve, 300, USASuccess);
+    reject();
   }));
 
   const value = await loadBalancer(promiseChina, promiseUSA);
