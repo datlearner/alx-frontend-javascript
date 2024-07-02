@@ -1,6 +1,6 @@
 export default function getListStudents() {
-  const arrayOfObjects = [];
-  arrayOfObjects.push({
+  const arr = [];
+  arr.push({
     id: 1,
     firstName: 'Guillaume',
     location: 'San Francisco',
@@ -15,5 +15,5 @@ export default function getListStudents() {
     firstName: 'Serena',
     location: 'San Francisco',
   });
-  return arrayOfObjects;
+  return arr;
 }
