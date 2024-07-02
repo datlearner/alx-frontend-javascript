@@ -1,5 +1,4 @@
-
-import updateUniqueItems from "./10-update_uniq_items";
+import updateUniqueItems from './10-update_uniq_items';
 
 const map = groceriesList();
 console.log(map);
